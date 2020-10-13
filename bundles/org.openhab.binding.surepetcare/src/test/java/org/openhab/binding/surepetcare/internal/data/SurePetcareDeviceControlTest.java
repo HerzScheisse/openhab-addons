@@ -71,5 +71,4 @@ public class SurePetcareDeviceControlTest {
         String json = SurePetcareConstants.GSON.toJson(control);
         assertEquals("{\"curfew\":[{\"enabled\":true,\"lock_time\":\"19:30\",\"unlock_time\":\"07:00\"}]}", json);
     }
-
 }

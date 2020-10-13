@@ -48,5 +48,4 @@ public class SurePetcareBaseObjectTest {
         assertNotNull(response.createdAt);
         assertNotNull(response.updatedAt);
     }
-
 }

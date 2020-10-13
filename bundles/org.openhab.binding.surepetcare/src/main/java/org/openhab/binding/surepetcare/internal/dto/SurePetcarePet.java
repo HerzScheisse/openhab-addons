@@ -100,5 +100,4 @@ public class SurePetcarePet extends SurePetcareBaseObject {
         properties.put("householdId", householdId.toString());
         return properties;
     }
-
 }

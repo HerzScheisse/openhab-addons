@@ -44,5 +44,4 @@ public class SurePetcareLoginResponse {
             return "Data [user=" + user + ", token=" + token + "]";
         }
     }
-
 }

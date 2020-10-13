@@ -9,178 +9,178 @@
 
 	<thing-type id="household">
 		<supported-bridge-type-refs>
-			<bridge-type-ref id="bridge" />
+			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
 		<label>Sure Petcare Household</label>
 		<description>A Sure Petcare household</description>
 
 		<channels>
-			<channel id="id" typeId="idType" />
-			<channel id="name" typeId="nameType" />
-			<channel id="timezoneId" typeId="timezoneIdType" />
+			<channel id="id" typeId="idType"/>
+			<channel id="name" typeId="nameType"/>
+			<channel id="timezoneId" typeId="timezoneIdType"/>
 		</channels>
 
 		<properties>
-			<property name="id" />
-			<property name="version" />
-			<property name="createdAt" />
-			<property name="updatedAt" />
+			<property name="id"/>
+			<property name="version"/>
+			<property name="createdAt"/>
+			<property name="updatedAt"/>
 		</properties>
 
 	</thing-type>
 
 	<thing-type id="hubDevice">
 		<supported-bridge-type-refs>
-			<bridge-type-ref id="bridge" />
+			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
 		<label>Sure Petcare Hub Device</label>
 		<description>A Sure Petcare hub device (connects cat flaps, feeders etc. to a network)</description>
 
 		<channels>
-			<channel id="id" typeId="idType" />
-			<channel id="name" typeId="nameType" />
-			<channel id="product" typeId="productType" />
-			<channel id="ledMode" typeId="ledModeType" />
-			<channel id="pairingMode" typeId="pairingModeType" />
-			<channel id="online" typeId="onlineType" />
+			<channel id="id" typeId="idType"/>
+			<channel id="name" typeId="nameType"/>
+			<channel id="product" typeId="productType"/>
+			<channel id="ledMode" typeId="ledModeType"/>
+			<channel id="pairingMode" typeId="pairingModeType"/>
+			<channel id="online" typeId="onlineType"/>
 		</channels>
 
 		<properties>
-			<property name="id" />
-			<property name="version" />
-			<property name="createdAt" />
-			<property name="updatedAt" />
-			<property name="householdId" />
-			<property name="productType" />
-			<property name="productName" />
+			<property name="id"/>
+			<property name="version"/>
+			<property name="createdAt"/>
+			<property name="updatedAt"/>
+			<property name="householdId"/>
+			<property name="productType"/>
+			<property name="productName"/>
 		</properties>
 
 	</thing-type>
 
 	<thing-type id="flapDevice">
 		<supported-bridge-type-refs>
-			<bridge-type-ref id="bridge" />
+			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
 		<label>Sure Petcare Flap Device</label>
 		<description>A Sure Petcare cat or pet flap device</description>
 
 		<channels>
-			<channel id="id" typeId="idType" />
-			<channel id="name" typeId="nameType" />
-			<channel id="product" typeId="productType" />
-			<channel id="curfewEnabled1" typeId="curfewEnabledType" />
-			<channel id="curfewLockTime1" typeId="curfewLockTimeType" />
-			<channel id="curfewUnlockTime1" typeId="curfewUnlockTimeType" />
-			<channel id="curfewEnabled2" typeId="curfewEnabledType" />
-			<channel id="curfewLockTime2" typeId="curfewLockTimeType" />
-			<channel id="curfewUnlockTime2" typeId="curfewUnlockTimeType" />
-			<channel id="curfewEnabled3" typeId="curfewEnabledType" />
-			<channel id="curfewLockTime3" typeId="curfewLockTimeType" />
-			<channel id="curfewUnlockTime3" typeId="curfewUnlockTimeType" />
-			<channel id="curfewEnabled4" typeId="curfewEnabledType" />
-			<channel id="curfewLockTime4" typeId="curfewLockTimeType" />
-			<channel id="curfewUnlockTime4" typeId="curfewUnlockTimeType" />
-			<channel id="lockingMode" typeId="lockingModeType" />
-			<channel id="lowBattery" typeId="system.low-battery" />
-			<channel id="batteryLevel" typeId="system.battery-level" />
-			<channel id="batteryVoltage" typeId="batteryVoltageType" />
-			<channel id="online" typeId="onlineType" />
-			<channel id="deviceRSSI" typeId="rssiDeviceType" />
-			<channel id="hubRSSI" typeId="rssiHubType" />
+			<channel id="id" typeId="idType"/>
+			<channel id="name" typeId="nameType"/>
+			<channel id="product" typeId="productType"/>
+			<channel id="curfewEnabled1" typeId="curfewEnabledType"/>
+			<channel id="curfewLockTime1" typeId="curfewLockTimeType"/>
+			<channel id="curfewUnlockTime1" typeId="curfewUnlockTimeType"/>
+			<channel id="curfewEnabled2" typeId="curfewEnabledType"/>
+			<channel id="curfewLockTime2" typeId="curfewLockTimeType"/>
+			<channel id="curfewUnlockTime2" typeId="curfewUnlockTimeType"/>
+			<channel id="curfewEnabled3" typeId="curfewEnabledType"/>
+			<channel id="curfewLockTime3" typeId="curfewLockTimeType"/>
+			<channel id="curfewUnlockTime3" typeId="curfewUnlockTimeType"/>
+			<channel id="curfewEnabled4" typeId="curfewEnabledType"/>
+			<channel id="curfewLockTime4" typeId="curfewLockTimeType"/>
+			<channel id="curfewUnlockTime4" typeId="curfewUnlockTimeType"/>
+			<channel id="lockingMode" typeId="lockingModeType"/>
+			<channel id="lowBattery" typeId="system.low-battery"/>
+			<channel id="batteryLevel" typeId="system.battery-level"/>
+			<channel id="batteryVoltage" typeId="batteryVoltageType"/>
+			<channel id="online" typeId="onlineType"/>
+			<channel id="deviceRSSI" typeId="rssiDeviceType"/>
+			<channel id="hubRSSI" typeId="rssiHubType"/>
 		</channels>
 
 		<properties>
-			<property name="id" />
-			<property name="version" />
-			<property name="createdAt" />
-			<property name="updatedAt" />
-			<property name="householdId" />
-			<property name="productType" />
-			<property name="productName" />
-			<property name="pairingAt" />
+			<property name="id"/>
+			<property name="version"/>
+			<property name="createdAt"/>
+			<property name="updatedAt"/>
+			<property name="householdId"/>
+			<property name="productType"/>
+			<property name="productName"/>
+			<property name="pairingAt"/>
 		</properties>
 	</thing-type>
 
 	<thing-type id="feederDevice">
 		<supported-bridge-type-refs>
-			<bridge-type-ref id="bridge" />
+			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
 		<label>Sure Petcare Feeder Device</label>
 		<description>A Sure Petcare pet feeder device</description>
 
 		<channels>
-			<channel id="id" typeId="idType" />
-			<channel id="name" typeId="nameType" />
-			<channel id="product" typeId="productType" />
-			<channel id="lowBattery" typeId="system.low-battery" />
-			<channel id="batteryLevel" typeId="system.battery-level" />
-			<channel id="batteryVoltage" typeId="batteryVoltageType" />
-			<channel id="online" typeId="onlineType" />
-			<channel id="deviceRSSI" typeId="rssiDeviceType" />
-			<channel id="hubRSSI" typeId="rssiHubType" />
-			<channel id="bowlsFood" typeId="bowlsFoodType" />
-			<channel id="bowlsTarget" typeId="bowlsTargetType" />
-			<channel id="bowlsFoodLeft" typeId="bowlsFoodLeftType" />
-			<channel id="bowlsTargetLeft" typeId="bowlsTargetLeftType" />
-			<channel id="bowlsFoodRight" typeId="bowlsFoodRightType" />
-			<channel id="bowlsTargetRight" typeId="bowlsTargetRightType" />
-			<channel id="bowls" typeId="bowlsType" />
-			<channel id="bowlsCloseDelay" typeId="bowlsCloseDelayType" />
-			<channel id="bowlsTrainingMode" typeId="bowlsTrainingModeType" />
+			<channel id="id" typeId="idType"/>
+			<channel id="name" typeId="nameType"/>
+			<channel id="product" typeId="productType"/>
+			<channel id="lowBattery" typeId="system.low-battery"/>
+			<channel id="batteryLevel" typeId="system.battery-level"/>
+			<channel id="batteryVoltage" typeId="batteryVoltageType"/>
+			<channel id="online" typeId="onlineType"/>
+			<channel id="deviceRSSI" typeId="rssiDeviceType"/>
+			<channel id="hubRSSI" typeId="rssiHubType"/>
+			<channel id="bowlsFood" typeId="bowlsFoodType"/>
+			<channel id="bowlsTarget" typeId="bowlsTargetType"/>
+			<channel id="bowlsFoodLeft" typeId="bowlsFoodLeftType"/>
+			<channel id="bowlsTargetLeft" typeId="bowlsTargetLeftType"/>
+			<channel id="bowlsFoodRight" typeId="bowlsFoodRightType"/>
+			<channel id="bowlsTargetRight" typeId="bowlsTargetRightType"/>
+			<channel id="bowls" typeId="bowlsType"/>
+			<channel id="bowlsCloseDelay" typeId="bowlsCloseDelayType"/>
+			<channel id="bowlsTrainingMode" typeId="bowlsTrainingModeType"/>
 		</channels>
 
 		<properties>
-			<property name="id" />
-			<property name="version" />
-			<property name="createdAt" />
-			<property name="updatedAt" />
-			<property name="householdId" />
-			<property name="productType" />
-			<property name="productName" />
-			<property name="pairingAt" />
+			<property name="id"/>
+			<property name="version"/>
+			<property name="createdAt"/>
+			<property name="updatedAt"/>
+			<property name="householdId"/>
+			<property name="productType"/>
+			<property name="productName"/>
+			<property name="pairingAt"/>
 		</properties>
 	</thing-type>
 
 	<thing-type id="pet">
 		<supported-bridge-type-refs>
-			<bridge-type-ref id="bridge" />
+			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
 		<label>Sure Petcare Pet</label>
 		<description>A Sure Petcare pet</description>
 
 		<channels>
-			<channel id="id" typeId="idType" />
-			<channel id="name" typeId="nameType" />
-			<channel id="comment" typeId="commentType" />
-			<channel id="gender" typeId="genderType" />
-			<channel id="breed" typeId="breedType" />
-			<channel id="species" typeId="speciesType" />
-			<channel id="photo" typeId="photoType" />
-			<channel id="tagIdentifier" typeId="tagIdentifierType" />
-			<channel id="location" typeId="locationType" />
-			<channel id="locationChanged" typeId="locationChangedType" />
-			<channel id="locationTimeoffset" typeId="locationTimeoffsetType" />
-			<channel id="locationChangedThrough" typeId="locationChangedThroughType" />
-			<channel id="dateOfBirth" typeId="dateOfBirthType" />
-			<channel id="weight" typeId="weightType" />
-			<channel id="feederDevice" typeId="feederDeviceType" />
-			<channel id="feederLastFeeding" typeId="feederLastFeedingType" />
-			<channel id="feederLastChange" typeId="feederLastChangeType" />
-			<channel id="feederLastChangeLeft" typeId="feederLastChangeLeftType" />
-			<channel id="feederLastChangeRight" typeId="feederLastChangeRightType" />
+			<channel id="id" typeId="idType"/>
+			<channel id="name" typeId="nameType"/>
+			<channel id="comment" typeId="commentType"/>
+			<channel id="gender" typeId="genderType"/>
+			<channel id="breed" typeId="breedType"/>
+			<channel id="species" typeId="speciesType"/>
+			<channel id="photo" typeId="photoType"/>
+			<channel id="tagIdentifier" typeId="tagIdentifierType"/>
+			<channel id="location" typeId="locationType"/>
+			<channel id="locationChanged" typeId="locationChangedType"/>
+			<channel id="locationTimeoffset" typeId="locationTimeoffsetType"/>
+			<channel id="locationChangedThrough" typeId="locationChangedThroughType"/>
+			<channel id="dateOfBirth" typeId="dateOfBirthType"/>
+			<channel id="weight" typeId="weightType"/>
+			<channel id="feederDevice" typeId="feederDeviceType"/>
+			<channel id="feederLastFeeding" typeId="feederLastFeedingType"/>
+			<channel id="feederLastChange" typeId="feederLastChangeType"/>
+			<channel id="feederLastChangeLeft" typeId="feederLastChangeLeftType"/>
+			<channel id="feederLastChangeRight" typeId="feederLastChangeRightType"/>
 		</channels>
 
 		<properties>
-			<property name="id" />
-			<property name="version" />
-			<property name="createdAt" />
-			<property name="updatedAt" />
-			<property name="householdId" />
+			<property name="id"/>
+			<property name="version"/>
+			<property name="createdAt"/>
+			<property name="updatedAt"/>
+			<property name="householdId"/>
 		</properties>
 
 	</thing-type>
@@ -189,28 +189,28 @@
 		<item-type>Number</item-type>
 		<label>Id</label>
 		<description>A unique id of the thing</description>
-		<state readOnly="true" pattern="%d" />
+		<state readOnly="true" pattern="%d"/>
 	</channel-type>
 
 	<channel-type id="nameType">
 		<item-type>String</item-type>
 		<label>Name</label>
 		<description>The name of the thing</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="commentType">
 		<item-type>String</item-type>
 		<label>Comment</label>
 		<description>Comments about the thing</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="timezoneIdType">
 		<item-type>Number</item-type>
 		<label>Timezone Id</label>
 		<description>The identifier of the timezone</description>
-		<state readOnly="true" pattern="%d" />
+		<state readOnly="true" pattern="%d"/>
 	</channel-type>
 
 	<channel-type id="productType">
@@ -232,7 +232,7 @@
 		<item-type>String</item-type>
 		<label>Share Code</label>
 		<description>A unique code provided by Sure Petcare to access photos of pets</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="genderType">
@@ -326,14 +326,14 @@
 		<item-type>Image</item-type>
 		<label>Pet Photo</label>
 		<description>The image of the pet</description>
-		<state readOnly="true" />
+		<state readOnly="true"/>
 	</channel-type>
 
 	<channel-type id="tagIdentifierType">
 		<item-type>String</item-type>
 		<label>Micro Chip Tag Identifier</label>
 		<description>The unique identifier of the pet micro chip tag</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="locationType">
@@ -353,7 +353,7 @@
 		<item-type>DateTime</item-type>
 		<label>Last Location Change Time</label>
 		<description>The time when the pet location has last changed</description>
-		<state readOnly="true" pattern="%1$tF %1$tR" />
+		<state readOnly="true" pattern="%1$tF %1$tR"/>
 	</channel-type>
 
 	<channel-type id="locationTimeoffsetType">
@@ -373,7 +373,7 @@
 		<item-type>String</item-type>
 		<label>Pet Location Changed Through</label>
 		<description>Shows the device name or username of the last location change.</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="ledModeType" advanced="true">
@@ -405,28 +405,28 @@
 		<item-type>Switch</item-type>
 		<label>Online</label>
 		<description>Indicator if device is online or offline</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="curfewEnabledType">
 		<item-type>Switch</item-type>
 		<label>Curfew Enabled</label>
 		<description>Indicator if the curfew is enabled</description>
-		<state readOnly="false" pattern="%s" />
+		<state readOnly="false" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="curfewLockTimeType">
 		<item-type>String</item-type>
 		<label>Curfew Lock Time</label>
 		<description>The time when the curfew starts</description>
-		<state readOnly="false" pattern="%s" />
+		<state readOnly="false" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="curfewUnlockTimeType">
 		<item-type>String</item-type>
 		<label>Curfew Unlock Time</label>
 		<description>The time when the curfew finishes</description>
-		<state readOnly="false" pattern="%s" />
+		<state readOnly="false" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="dateOfBirthType">
@@ -434,49 +434,49 @@
 		<label>Pet Date of Birth</label>
 		<description>The pet's date of birth.</description>
 		<category>Time</category>
-		<state readOnly="true" pattern="%1$tY-%1$tm-%1$td" />
+		<state readOnly="true" pattern="%1$tY-%1$tm-%1$td"/>
 	</channel-type>
 
 	<channel-type id="weightType">
 		<item-type>Number:Mass</item-type>
 		<label>Pet Weight</label>
 		<description>The pet weight</description>
-		<state readOnly="true" pattern="%.1f %unit%" />
+		<state readOnly="true" pattern="%.1f %unit%"/>
 	</channel-type>
 
 	<channel-type id="feederDeviceType">
 		<item-type>String</item-type>
 		<label>Pet Feeding Device Name</label>
 		<description>The pet feeding device name</description>
-		<state readOnly="true" pattern="%s" />
+		<state readOnly="true" pattern="%s"/>
 	</channel-type>
 
 	<channel-type id="feederLastFeedingType">
 		<item-type>DateTime</item-type>
 		<label>Pet Last Feeding</label>
 		<description>The last pet feeding</description>
-		<state readOnly="true" pattern="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS" />
+		<state readOnly="true" pattern="%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"/>
 	</channel-type>
 
 	<channel-type id="feederLastChangeType">
 		<item-type>Number:Mass</item-type>
 		<label>Pet Feeding Last Change</label>
 		<description>The pet feeding last change</description>
-		<state readOnly="true" pattern="%.2f %unit%" />
+		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
 
 	<channel-type id="feederLastChangeLeftType">
 		<item-type>Number:Mass</item-type>
 		<label>Pet Feeding Last Change Left</label>
 		<description>The pet feeding last change left</description>
-		<state readOnly="true" pattern="%.2f %unit%" />
+		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
 
 	<channel-type id="feederLastChangeRightType">
 		<item-type>Number:Mass</item-type>
 		<label>Pet Feeding Last Change Right</label>
 		<description>The pet feeding last change right</description>
-		<state readOnly="true" pattern="%.2f %unit%" />
+		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
 
 	<channel-type id="lockingModeType">
@@ -498,21 +498,21 @@
 		<item-type>Number</item-type>
 		<label>Battery Voltage</label>
 		<description>The current battery voltage</description>
-		<state readOnly="true" pattern="%.1f V" />
+		<state readOnly="true" pattern="%.1f V"/>
 	</channel-type>
 
 	<channel-type id="rssiDeviceType" advanced="true">
 		<item-type>Number</item-type>
 		<label>Signal Strength Device (RSSI)</label>
 		<description>The received device signal strength (RSSI).</description>
-		<state readOnly="true" pattern="%.2f dB" />
+		<state readOnly="true" pattern="%.2f dB"/>
 	</channel-type>
 
 	<channel-type id="rssiHubType" advanced="true">
 		<item-type>Number</item-type>
 		<label>Signal Strength Hub (RSSI)</label>
 		<description>The received hub signal strength (RSSI).</description>
-		<state readOnly="true" pattern="%.2f dB" />
+		<state readOnly="true" pattern="%.2f dB"/>
 	</channel-type>
 
 	<channel-type id="bowlsFoodType">
@@ -532,7 +532,7 @@
 		<item-type>Number:Mass</item-type>
 		<label>Bowls Target (Big Bowl)</label>
 		<description>The weight target of the bowl if the big bowl is used.</description>
-		<state readOnly="true" pattern="%.0f %unit%" />
+		<state readOnly="true" pattern="%.0f %unit%"/>
 	</channel-type>
 
 	<channel-type id="bowlsFoodLeftType">
@@ -552,7 +552,7 @@
 		<item-type>Number:Mass</item-type>
 		<label>Bowls Target Small Bowl (Left)</label>
 		<description>The weight target of the left bowl if the small bowls are used.</description>
-		<state readOnly="true" pattern="%.0f %unit%" />
+		<state readOnly="true" pattern="%.0f %unit%"/>
 	</channel-type>
 
 	<channel-type id="bowlsFoodRightType">
@@ -572,7 +572,7 @@
 		<item-type>Number:Mass</item-type>
 		<label>Bowls Target Small Bowl (Right)</label>
 		<description>The weight target of the right bowl if the small bowls are used.</description>
-		<state readOnly="true" pattern="%.0f %unit%" />
+		<state readOnly="true" pattern="%.0f %unit%"/>
 	</channel-type>
 
 	<channel-type id="bowlsType">

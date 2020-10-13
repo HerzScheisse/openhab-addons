@@ -473,5 +473,4 @@ public class SurePetcareAPIHelper {
         }
         throw new SurePetcareApiException("Can't execute API after 3 retries");
     }
-
 }

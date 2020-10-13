@@ -183,7 +183,6 @@ public class SurePetcareDeviceHandler extends SurePetcareBaseObjectHandler {
             updateState(DEVICE_CHANNEL_CURFEW_LOCK_TIME + (i + 1), new StringType(curfew.lockTime));
             updateState(DEVICE_CHANNEL_CURFEW_UNLOCK_TIME + (i + 1), new StringType(curfew.unlockTime));
         }
-
     }
 
     private void handleCurfewCommand(ChannelUID channelUID, Command command) {
@@ -250,5 +249,4 @@ public class SurePetcareDeviceHandler extends SurePetcareBaseObjectHandler {
 
         }
     }
-
 }

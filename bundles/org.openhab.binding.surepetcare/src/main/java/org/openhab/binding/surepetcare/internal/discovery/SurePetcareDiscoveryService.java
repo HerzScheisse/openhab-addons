@@ -177,5 +177,4 @@ public class SurePetcareDiscoveryService extends AbstractDiscoveryService
                     .withBridge(bridgeUID).build());
         }
     }
-
 }

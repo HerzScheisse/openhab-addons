@@ -50,5 +50,4 @@ public class SurePetcareHouseholdHandler extends SurePetcareBaseObjectHandler {
             logger.debug("Trying to update unknown household: {}", thing.getUID().getId());
         }
     }
-
 }

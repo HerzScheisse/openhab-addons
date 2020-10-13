@@ -68,5 +68,4 @@ public class SurePetcareTopologyTest {
 
         assertNull(response.getUser());
     }
-
 }

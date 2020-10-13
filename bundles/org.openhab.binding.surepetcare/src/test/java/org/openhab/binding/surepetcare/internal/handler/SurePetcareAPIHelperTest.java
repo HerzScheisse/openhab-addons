@@ -90,5 +90,4 @@ public class SurePetcareAPIHelperTest extends SurePetcareAPIHelper {
         int deviceId = api.getDeviceId(Collections.enumeration(interfaces), localHostAddress);
         assertEquals(106011461, deviceId);
     }
-
 }

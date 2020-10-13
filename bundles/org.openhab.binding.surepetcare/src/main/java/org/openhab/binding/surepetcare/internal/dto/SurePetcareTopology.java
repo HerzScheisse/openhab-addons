@@ -134,5 +134,4 @@ public class SurePetcareTopology {
         return "SurePetcareTopology [# of Devices=" + devices.size() + ", # of Households=" + households.size()
                 + ", # of pets=" + pets.size() + "]";
     }
-
 }
