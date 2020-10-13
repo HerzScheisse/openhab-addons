@@ -112,6 +112,5 @@ public final class SurePetcareDeviceCurfewListTypeAdapterFactory<E> implements T
             }
             return list;
         }
-
     }
 }

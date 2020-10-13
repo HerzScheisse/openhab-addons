@@ -59,5 +59,4 @@ public class SurePetcareUser extends SurePetcareBaseObject {
         return "User [id=" + id + ", email_address=" + emailAddress + ", first_name=" + firstName + ", last_name="
                 + lastName + "]";
     }
-
 }

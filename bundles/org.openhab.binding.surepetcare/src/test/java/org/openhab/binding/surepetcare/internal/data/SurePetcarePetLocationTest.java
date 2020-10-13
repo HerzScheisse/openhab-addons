@@ -60,5 +60,4 @@ public class SurePetcarePetLocationTest {
 
         assertEquals("{\"where\":2,\"since\":\"2019-09-11T13:09:07+00:00\"}", json);
     }
-
 }

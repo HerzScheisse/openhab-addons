@@ -148,5 +148,4 @@ public class SurePetcarePetTest {
         }
         assertEquals(sinceDate, response.status.activity.since);
     }
-
 }

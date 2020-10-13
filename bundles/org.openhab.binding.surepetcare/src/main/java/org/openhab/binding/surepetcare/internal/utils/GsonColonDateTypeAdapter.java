@@ -64,7 +64,6 @@ public class GsonColonDateTypeAdapter implements JsonSerializer<Date>, JsonDeser
             }
             return super.parse(fixedText, pos);
         }
-
     }
 
     private final ColonDateFormat dateFormat;

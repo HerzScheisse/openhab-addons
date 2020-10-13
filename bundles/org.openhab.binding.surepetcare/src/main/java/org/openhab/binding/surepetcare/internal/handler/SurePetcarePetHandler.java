@@ -247,5 +247,4 @@ public class SurePetcarePetHandler extends SurePetcareBaseObjectHandler {
     private static RawType downloadPetPhoto(String url) {
         return HttpUtil.downloadImage(url);
     }
-
 }

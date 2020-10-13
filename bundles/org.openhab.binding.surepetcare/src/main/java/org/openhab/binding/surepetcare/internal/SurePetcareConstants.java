@@ -110,5 +110,4 @@ public class SurePetcareConstants {
     public static final String PET_CHANNEL_FEEDER_LAST_CHANGE = "feederLastChange";
     public static final String PET_CHANNEL_FEEDER_LAST_CHANGE_LEFT = "feederLastChangeLeft";
     public static final String PET_CHANNEL_FEEDER_LAST_CHANGE_RIGHT = "feederLastChangeRight";
-
 }

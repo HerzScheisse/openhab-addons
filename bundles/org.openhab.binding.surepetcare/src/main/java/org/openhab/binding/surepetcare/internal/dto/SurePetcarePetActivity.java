@@ -49,5 +49,4 @@ public class SurePetcarePetActivity {
     public ZonedDateTime getLocationChanged() {
         return since == null ? null : since.toInstant().atZone(ZoneId.systemDefault()).withNano(0);
     }
-
 }

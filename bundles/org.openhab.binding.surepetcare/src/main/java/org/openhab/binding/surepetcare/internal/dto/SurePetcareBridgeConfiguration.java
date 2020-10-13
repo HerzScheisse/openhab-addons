@@ -57,5 +57,4 @@ public class SurePetcareBridgeConfiguration {
     public void setRefreshIntervalStatus(Long refreshIntervalStatus) {
         this.refreshIntervalStatus = refreshIntervalStatus;
     }
-
 }

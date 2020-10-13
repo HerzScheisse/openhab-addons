@@ -51,5 +51,4 @@ public class SurePetcareBaseObject {
         this.updatedAt = newdev.updatedAt;
         return this;
     }
-
 }

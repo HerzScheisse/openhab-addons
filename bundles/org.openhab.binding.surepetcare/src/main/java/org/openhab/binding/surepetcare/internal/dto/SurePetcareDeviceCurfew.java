@@ -39,5 +39,4 @@ public class SurePetcareDeviceCurfew {
     public String toString() {
         return enabled.toString() + "," + lockTime + "," + unlockTime;
     }
-
 }

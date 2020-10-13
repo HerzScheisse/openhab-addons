@@ -106,5 +106,4 @@ public class SurePetcareDevice extends SurePetcareBaseObject {
         this.status = newdev.status;
         return this;
     }
-
 }

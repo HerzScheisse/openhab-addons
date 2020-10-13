@@ -45,5 +45,4 @@ public class SurePetcareHousehold extends SurePetcareBaseObject {
         @SerializedName("user")
         public User user;
     }
-
 }

@@ -96,5 +96,4 @@ public class SurePetcareHandlerFactory extends BaseThingHandlerFactory {
     protected void unsetHttpClientFactory(HttpClientFactory httpClientFactory) {
         petcareAPI.setHttpClient(null);
     }
-
 }

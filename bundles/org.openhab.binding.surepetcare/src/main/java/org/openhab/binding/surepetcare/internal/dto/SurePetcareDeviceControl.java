@@ -88,5 +88,4 @@ public class SurePetcareDeviceControl {
             this.closeDelayId = closeDelayId;
         }
     }
-
 }

@@ -92,5 +92,4 @@ public class SurePetcareDeviceCurfewListTest {
         assertTrue(compact.get(1).enabled);
         assertEquals(compact.get(1).lockTime, "19:00");
     }
-
 }

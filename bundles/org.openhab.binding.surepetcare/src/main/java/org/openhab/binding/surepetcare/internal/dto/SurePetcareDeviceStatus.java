@@ -66,5 +66,4 @@ public class SurePetcareDeviceStatus {
         public Float deviceRssi;
         public Float hubRssi;
     }
-
 }

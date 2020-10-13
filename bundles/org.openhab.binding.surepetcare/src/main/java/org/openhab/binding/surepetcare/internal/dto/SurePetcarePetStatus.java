@@ -27,5 +27,4 @@ public class SurePetcarePetStatus {
     public SurePetcarePetActivity activity;
     @SerializedName("feeding")
     public SurePetcarePetFeeding feeding;
-
 }
