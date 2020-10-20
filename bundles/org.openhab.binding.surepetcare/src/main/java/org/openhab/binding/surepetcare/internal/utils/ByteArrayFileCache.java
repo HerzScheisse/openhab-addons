@@ -13,6 +13,7 @@
 package org.openhab.binding.surepetcare.internal.utils;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -61,7 +62,8 @@ public class ByteArrayFileCache {
      * @param servicePID PID of the service
      */
     public ByteArrayFileCache(String servicePID) {
-        // Future enhancement: track and limit folder size, support user specific folder
+        // TODO track and limit folder size
+        // TODO support user specific folder
         cacheFolder = new File(new File(ConfigConstants.getUserDataFolder(), CACHE_FOLDER_NAME), servicePID);
         if (!cacheFolder.exists()) {
             logger.debug("Creating cache folder '{}'", cacheFolder.getAbsolutePath());
@@ -138,7 +140,7 @@ public class ByteArrayFileCache {
         try {
             Files.write(fileInCache.toPath(), content);
         } catch (IOException e) {
-            logger.warn("Could not write file '{}' to cache", fileInCache.getName(), e);
+            logger.warn("Could not write file '{}' to cache", fileInCache.getName(), e);
         }
     }
 
@@ -220,8 +222,10 @@ public class ByteArrayFileCache {
      *
      * @param key the key whose associated file is to be returned
      * @return the content of the file associated with the given key
+     * @throws FileNotFoundException if the given file could not be found in cache
+     * @throws IOException if an I/O error occurs reading the given file
      */
-    public byte[] get(String key) {
+    public byte[] get(String key) throws FileNotFoundException, IOException {
         return readFile(getUniqueFile(key));
     }
 
@@ -230,8 +234,10 @@ public class ByteArrayFileCache {
      *
      * @param fileInCache the {@link File}
      * @return the content of the file
+     * @throws FileNotFoundException if the given file could not be found in cache
+     * @throws IOException if an I/O error occurs reading the given file
      */
-    private byte[] readFile(File fileInCache) {
+    private byte[] readFile(File fileInCache) throws FileNotFoundException, IOException {
         if (fileInCache.exists()) {
             logger.debug("Reading file '{}' from cache", fileInCache.getName());
             // update time of last use
@@ -239,12 +245,13 @@ public class ByteArrayFileCache {
             try {
                 return Files.readAllBytes(fileInCache.toPath());
             } catch (IOException e) {
-                logger.warn("Could not read file '{}' from cache", fileInCache.getName(), e);
+                logger.warn("Could not read file '{}' from cache", fileInCache.getName(), e);
+                throw new IOException(String.format("Could not read file '%s' from cache", fileInCache.getName()));
             }
         } else {
             logger.debug("File '{}' not found in cache", fileInCache.getName());
+            throw new FileNotFoundException(String.format("File '%s' not found in cache", fileInCache.getName()));
         }
-        return new byte[0];
     }
 
     /**
@@ -276,7 +283,7 @@ public class ByteArrayFileCache {
     String getFileExtension(String fileName) {
         int extensionPos = fileName.lastIndexOf(EXTENSION_SEPARATOR);
         int lastSeparatorPos = Math.max(fileName.lastIndexOf(UNIX_SEPARATOR), fileName.lastIndexOf(WINDOWS_SEPARATOR));
-        return lastSeparatorPos > extensionPos ? null : fileName.substring(extensionPos + 1);
+        return lastSeparatorPos > extensionPos ? null : fileName.substring(extensionPos + 1).replaceFirst("\\?.*$", "");
     }
 
     /**
@@ -287,16 +294,8 @@ public class ByteArrayFileCache {
      */
     String getUniqueFileName(String key) {
         try {
-            MessageDigest md = MessageDigest.getInstance(MD5_ALGORITHM);
-            byte[] bytesOfKey = key.getBytes(StandardCharsets.UTF_8);
-            byte[] md5Hash = md.digest(bytesOfKey);
-            BigInteger bigInt = new BigInteger(1, md5Hash);
-            String fileNameHash = bigInt.toString(16);
-            // Now we need to zero pad it if you actually want the full 32 chars
-            while (fileNameHash.length() < 32) {
-                fileNameHash = "0" + fileNameHash;
-            }
-            return fileNameHash;
+            final MessageDigest md = MessageDigest.getInstance(MD5_ALGORITHM);
+            return String.format("%032x", new BigInteger(1, md.digest(key.getBytes(StandardCharsets.UTF_8))));
         } catch (NoSuchAlgorithmException ex) {
             // should not happen
             logger.error("Could not create MD5 hash for key '{}'", key, ex);
