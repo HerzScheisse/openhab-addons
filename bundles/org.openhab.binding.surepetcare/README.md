@@ -18,7 +18,7 @@ This binding offers integration to the Sure Petcare API, supporting cloud-connec
 
 The binding code is based on a lot of work done by other developers:
 
-- Holger Eisold (https://github.com/HerzScheisse) - Python use in OpenHAB and various PRs (https://github.com/HerzScheisse/SurePetcare-openHAB-JSR223-Rules)
+- Holger Eisold (https://github.com/HerzScheisse) - Python use in openHAB and various PRs (https://github.com/HerzScheisse/SurePetcare-openHAB-JSR223-Rules)
 - Alex Toft (https://github.com/alextoft) - PHP implementation (https://github.com/alextoft/sureflap)
 - rcastberg (https://github.com/rcastberg) - Python implementation (https://github.com/rcastberg/sure_petcare)
 
@@ -291,7 +291,7 @@ sitemap surepetcare label="My home automation" {
     Text item=UR_1e_Weight icon="text"
     Text item=UR_1e_DateOfBirth
     Text item=UR_1e_FeedDevice
-    /*Text item=UR_1e_FeedChange icon="text"*/
+    /*Text item=UR_1e_FeedChange icon="text"*/ // if you have one big bowl in your feeder use this line and comment the following 2 out
     Text item=UR_1e_FeedChangeLeft icon="text"
     Text item=UR_1e_FeedChangeRight icon="text"
     Text item=UR_1e_FeedAt
