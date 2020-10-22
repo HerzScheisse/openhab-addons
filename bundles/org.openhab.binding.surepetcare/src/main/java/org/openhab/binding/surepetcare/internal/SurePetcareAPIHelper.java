@@ -467,8 +467,7 @@ public class SurePetcareAPIHelper {
                 }
             } catch (AuthenticationException | InterruptedException | ExecutionException | TimeoutException
                     | ProtocolException e) {
-                logger.debug("Exception caught during API execution: {}", e.getMessage());
-                throw new SurePetcareApiException(e);
+                throw new SurePetcareApiException("Exception caught during API execution." + e);
             }
         }
         throw new SurePetcareApiException("Can't execute API after 3 retries");
