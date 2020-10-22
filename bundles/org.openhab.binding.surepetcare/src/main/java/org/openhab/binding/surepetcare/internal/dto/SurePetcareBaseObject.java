@@ -26,13 +26,12 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 @NonNullByDefault
 public class SurePetcareBaseObject {
 
-    public Long id = Long.valueOf(0);
+    public Long id = 0L;
     public String version = "";
     public Date createdAt = new Date();
     public Date updatedAt = new Date();
 
     public SurePetcareBaseObject() {
-        super();
     }
 
     public Map<String, String> getThingProperties() {

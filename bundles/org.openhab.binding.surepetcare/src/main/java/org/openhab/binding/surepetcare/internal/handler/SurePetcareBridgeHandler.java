@@ -59,8 +59,8 @@ public class SurePetcareBridgeHandler extends BaseBridgeHandler {
     private final Logger logger = LoggerFactory.getLogger(SurePetcareBridgeHandler.class);
 
     private final SurePetcareAPIHelper petcareAPI;
-    private @Nullable ScheduledFuture<?> topologyPollingJob = null;
-    private @Nullable ScheduledFuture<?> petStatusPollingJob = null;
+    private @Nullable ScheduledFuture<?> topologyPollingJob;
+    private @Nullable ScheduledFuture<?> petStatusPollingJob;
 
     public SurePetcareBridgeHandler(Bridge bridge, SurePetcareAPIHelper petcareAPI) {
         super(bridge);
@@ -161,7 +161,7 @@ public class SurePetcareBridgeHandler extends BaseBridgeHandler {
         } else {
             switch (channelUID.getId()) {
                 case BRIDGE_CHANNEL_REFRESH:
-                    if ("ON".equals(command.toString())) {
+                    if (OnOffType.ON.equals(command)) {
                         petcareAPI.updateTopologyCache();
                         updateThings();
                         updateState(BRIDGE_CHANNEL_REFRESH, OnOffType.OFF);

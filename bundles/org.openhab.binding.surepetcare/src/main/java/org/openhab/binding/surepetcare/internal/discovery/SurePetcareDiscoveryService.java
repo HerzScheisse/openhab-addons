@@ -167,14 +167,12 @@ public class SurePetcareDiscoveryService extends AbstractDiscoveryService
                 break;
             case UNKNOWN:
             default:
-                break;
+                return;
         }
-        if (typeUID != null) {
-            ThingUID thingsUID = new ThingUID(typeUID, bridgeUID, device.id.toString());
-            Map<String, Object> properties = new HashMap<String, Object>();
-            properties.putAll(device.getThingProperties());
-            thingDiscovered(DiscoveryResultBuilder.create(thingsUID).withLabel(device.name).withProperties(properties)
-                    .withBridge(bridgeUID).build());
-        }
+        ThingUID thingsUID = new ThingUID(typeUID, bridgeUID, device.id.toString());
+        Map<String, Object> properties = new HashMap<String, Object>();
+        properties.putAll(device.getThingProperties());
+        thingDiscovered(DiscoveryResultBuilder.create(thingsUID).withLabel(device.name).withProperties(properties)
+                .withBridge(bridgeUID).build());
     }
 }

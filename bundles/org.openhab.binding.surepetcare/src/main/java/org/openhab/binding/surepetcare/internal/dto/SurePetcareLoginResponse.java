@@ -21,11 +21,6 @@ public class SurePetcareLoginResponse {
 
     public Data data;
 
-    @Override
-    public String toString() {
-        return "SurePetcareJsonLoginResponse [data=" + data + "]";
-    }
-
     public String getToken() {
         return data.token;
     }
@@ -43,5 +38,10 @@ public class SurePetcareLoginResponse {
         public String toString() {
             return "Data [user=" + user + ", token=" + token + "]";
         }
+    }
+
+    @Override
+    public String toString() {
+        return "SurePetcareJsonLoginResponse [data=" + data + "]";
     }
 }

@@ -28,7 +28,6 @@ public class SurePetcareLoginCredentials {
     }
 
     public SurePetcareLoginCredentials(String emailAddress, String password, String deviceId) {
-        super();
         this.emailAddress = emailAddress;
         this.password = password;
         this.deviceId = deviceId;
