@@ -353,7 +353,7 @@ public class SurePetcareAPIHelper {
                 logger.debug("current hostname: {}, device id: {}", hostname, decimal);
             }
         } catch (SocketException e) {
-            logger.debug("Socket Exception: {}", e.getMessage());
+            logger.debug("Socket Exception: cause={}. message={}", e.getCause(), e.getMessage());
         }
         return decimal;
     }

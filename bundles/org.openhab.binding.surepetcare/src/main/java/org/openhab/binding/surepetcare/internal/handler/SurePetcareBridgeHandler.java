@@ -86,7 +86,8 @@ public class SurePetcareBridgeHandler extends BaseBridgeHandler {
                 updateState(BRIDGE_CHANNEL_ONLINE, OnOffType.ON);
                 updateThings();
             } catch (AuthenticationException e) {
-                updateStatus(ThingStatus.OFFLINE);
+                updateStatus(ThingStatus.OFFLINE, ThingStatusDetail.CONFIGURATION_ERROR,
+                        "@text/offline.conf-error-authentication");
             }
         } else {
             logger.warn("Setting thing '{}' to OFFLINE: Parameter 'password' and 'username' must be configured.",
