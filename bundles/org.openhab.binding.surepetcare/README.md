@@ -38,8 +38,8 @@ This binding supports the following thing types
 ## Getting started /  Discovery
 
 The binding consists of a Bridge (the API connection), and a number of Things, which relates to the individual hardware devices and pets.
-SurePetCare things can be configured either through the online configuration utility via discovery, or manually through a 'surepetcare.things' configuration file.
-The Bridge will not be autodiscovered and must be added manually. This can be done via bridge thing configuration file or via PaperUI. That is because the Sure PetCare API requires authentication credentials to communicate with the service.
+Sure Petcare things can be configured either through the online configuration utility via discovery, or manually through a 'surepetcare.things' configuration file.
+The Bridge will not be autodiscovered and must be added manually. This can be done via bridge thing configuration file or via PaperUI. That is because the Sure Petcare API requires authentication credentials to communicate with the service.
 
 After adding the Bridge, it will go ONLINE, and after a short while, the discovery process for household, devices and pets will start. When new hardware is discovered it will appear in the Inbox.
 
@@ -380,5 +380,5 @@ Frame label="Group Pet/Cats items" {
 
 | Problem                                     | Solution                                                                            |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| Bridge cannot connect to SurePetCare API    | Check if you can logon to the Sure Petcare app with the given username/password.    |
+| Bridge cannot connect to Sure Petcare API    | Check if you can logon to the Sure Petcare app with the given username/password.    |
 
