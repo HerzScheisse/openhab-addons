@@ -36,7 +36,6 @@ public class SurePetcareDeviceControl {
     @SerializedName("pairing_mode")
     public Integer pairingModeId;
     public Bowls bowls;
-    @SerializedName("lid")
     public Lid lid;
     @SerializedName("training_mode")
     public Integer trainingModeId;

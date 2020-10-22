@@ -16,8 +16,6 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Date;
 
-import com.google.gson.annotations.SerializedName;
-
 /**
  * The {@link SurePetcarePetActivity} is the Java class used to represent the
  * status of a pet. It's used to deserialize JSON API results.
@@ -27,15 +25,10 @@ import com.google.gson.annotations.SerializedName;
  */
 public class SurePetcarePetActivity {
 
-    @SerializedName("tag_id")
     public Long tagId;
-    @SerializedName("device_id")
     public Long deviceId;
-    @SerializedName("user_id")
     public Long userId;
-    @SerializedName("where")
     public Integer where;
-    @SerializedName("since")
     public Date since;
 
     public SurePetcarePetActivity() {

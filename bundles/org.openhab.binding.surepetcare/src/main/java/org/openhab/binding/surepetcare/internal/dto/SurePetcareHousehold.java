@@ -26,7 +26,6 @@ public class SurePetcareHousehold extends SurePetcareBaseObject {
     public String name;
     public String shareCode;
     public Integer timezoneId;
-    @SerializedName("users")
     public List<HouseholdUsers> householdUsers = null;
 
     @Override
@@ -42,7 +41,6 @@ public class SurePetcareHousehold extends SurePetcareBaseObject {
             public String userName;
         }
 
-        @SerializedName("user")
         public User user;
     }
 }

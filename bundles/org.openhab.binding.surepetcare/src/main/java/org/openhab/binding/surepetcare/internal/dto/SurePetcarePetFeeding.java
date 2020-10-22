@@ -29,9 +29,7 @@ import com.google.gson.annotations.SerializedName;
  */
 public class SurePetcarePetFeeding {
 
-    @SerializedName("tag_id")
     public Long tagId;
-    @SerializedName("device_id")
     public Long deviceId;
     @SerializedName("change")
     public List<Float> feedChange = new ArrayList<>();

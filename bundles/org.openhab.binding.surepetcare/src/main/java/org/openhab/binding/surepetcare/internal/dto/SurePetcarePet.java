@@ -82,7 +82,6 @@ public class SurePetcarePet extends SurePetcareBaseObject {
     public Long tagId;
     public SurePetcarePhoto photo;
 
-    @SerializedName("status")
     public SurePetcarePetStatus status = new SurePetcarePetStatus();
 
     public ZonedDateTime getDateOfBirthAsZonedDateTime() {

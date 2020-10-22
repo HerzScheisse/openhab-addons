@@ -12,8 +12,6 @@
  */
 package org.openhab.binding.surepetcare.internal.dto;
 
-import com.google.gson.annotations.SerializedName;
-
 /**
  * The {@link SurePetcarePetStatus} is the Java class used to represent the
  * status of a pet. It's used to deserialize JSON API results.
@@ -23,8 +21,6 @@ import com.google.gson.annotations.SerializedName;
  */
 public class SurePetcarePetStatus {
 
-    @SerializedName("activity")
     public SurePetcarePetActivity activity;
-    @SerializedName("feeding")
     public SurePetcarePetFeeding feeding;
 }
