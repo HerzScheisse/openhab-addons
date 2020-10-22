@@ -14,6 +14,7 @@ package org.openhab.binding.surepetcare.internal.handler;
 
 import static org.eclipse.smarthome.core.thing.ThingStatus.ONLINE;
 
+import java.time.Duration;
 import java.util.Map;
 
 import org.eclipse.jdt.annotation.NonNullByDefault;
@@ -36,13 +37,13 @@ import org.slf4j.LoggerFactory;
 @NonNullByDefault
 public abstract class SurePetcareBaseObjectHandler extends BaseThingHandler {
 
-    private static final int UPDATE_THING_CACHE_TIMEOUT = 3000; // 3 secs
+    private static final int CACHE_TIMEOUT_SECOND = 3;
 
     private final Logger logger = LoggerFactory.getLogger(SurePetcareBaseObjectHandler.class);
 
     protected SurePetcareAPIHelper petcareAPI;
 
-    protected ExpiringCache<Integer> updateThingCache = new ExpiringCache<Integer>(UPDATE_THING_CACHE_TIMEOUT,
+    protected ExpiringCache<Integer> updateThingCache = new ExpiringCache<>(Duration.ofSeconds(CACHE_TIMEOUT_SECOND),
             this::refreshCache);
 
     public SurePetcareBaseObjectHandler(Thing thing, SurePetcareAPIHelper petcareAPI) {
