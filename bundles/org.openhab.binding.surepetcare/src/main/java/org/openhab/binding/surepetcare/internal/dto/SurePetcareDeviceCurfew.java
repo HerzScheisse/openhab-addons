@@ -19,7 +19,7 @@ package org.openhab.binding.surepetcare.internal.dto;
  */
 public class SurePetcareDeviceCurfew {
 
-    public Boolean enabled;
+    public boolean enabled;
     public String lockTime;
     public String unlockTime;
 
@@ -37,6 +37,6 @@ public class SurePetcareDeviceCurfew {
 
     @Override
     public String toString() {
-        return enabled.toString() + "," + lockTime + "," + unlockTime;
+        return enabled + "," + lockTime + "," + unlockTime;
     }
 }
