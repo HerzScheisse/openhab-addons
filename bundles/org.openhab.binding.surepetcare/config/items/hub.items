@@ -1,6 +1,0 @@
-Number      UR_1c_Id                "Hub Id [%d]"                                   (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:id"}
-String      UR_1c_Name              "Hub Name [%s]"                                 (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:name"}
-String      UR_1c_Product           "Hub Product [%s]"                              (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:product"}
-String      UR_1c_LEDMode           "Hub LED Mode [%s]"                             (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:ledMode"}
-String      UR_1c_PairingMode       "Hub Pairing Mode [%s]"                         (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:pairingMode"}
-Switch      UR_1c_Online            "Hub Online [%s]"                               (dgPet) {channel="surepetcare:hubDevice:bridge1:123456:online"}

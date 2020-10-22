@@ -1,3 +1,0 @@
-Number      UR_1b_Id            "Household Id [%d]"                 (dgPet) {channel="surepetcare:household:bridge1:12345:id"}
-String      UR_1b_Name          "Household Name [%s]"               (dgPet) {channel="surepetcare:household:bridge1:12345:name"}
-Number      UR_1b_TimezoneId    "Household Timezone Id [%d]"        (dgPet) {channel="surepetcare:household:bridge1:12345:timezoneId"}
